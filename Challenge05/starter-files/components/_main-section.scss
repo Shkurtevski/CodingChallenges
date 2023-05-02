@@ -1,0 +1,103 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+.main-section {
+  @extend %section;
+  display: flex;
+  .wrapper {
+    @extend %wrap;
+    display: flex;
+    flex-wrap: wrap;
+    .text-content {
+      @include mix.text-content;
+      .text-content-inner {
+        @include mix.text-content-inner;
+      }
+    }
+    .image-container {
+      display: flex;
+      width: 100%;
+      height: 200px;
+      margin-bottom: var.$gutter-base;
+      .left-column {
+        flex-basis: 40%;
+        margin-right: var.$gutter-base;
+        img {
+          @extend %img-setup;
+        }
+      }
+      .right-column {
+        flex-basis: 60%;
+        img {
+          @extend %img-setup;
+          @include mix.tablet-styles {
+            height: var.$gutter-base * 11;
+          }
+        }
+        @include mix.tablet-styles {
+          flex-basis: 100%;
+        }
+      }
+      @include mix.tablet-styles {
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: 0;
+        .left-column,
+        .right-column {
+          margin-right: 0;
+          margin-bottom: var.$gutter-base;
+          img {
+            width: 100%;
+            @include mix.tablet-styles {
+              height: var.$gutter-base * 11;
+            }
+          }
+        }
+      }
+    }
+    .image-container-02 {
+      display: flex;
+      width: 100%;
+      height: 200px;
+      .left-column-02 {
+        flex-basis: 60%;
+        margin-right: var.$gutter-base;
+        img {
+          @extend %img-setup;
+          @include mix.tablet-styles {
+            height: var.$gutter-base * 11;
+          }
+        }
+      }
+      .right-column-02 {
+        flex-basis: 60%;
+        img {
+          @extend %img-setup;
+          @include mix.tablet-styles {
+            height: var.$gutter-base * 11;
+          }
+        }
+      }
+      @include mix.tablet-styles {
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: 0;
+        .left-column-02,
+        .right-column-02 {
+          margin-right: 0;
+          &:not(:last-child) {
+            margin-bottom: var.$gutter-base;
+          }
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

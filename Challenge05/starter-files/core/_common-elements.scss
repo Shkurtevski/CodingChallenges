@@ -1,0 +1,58 @@
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+body {
+  font-family: var.$font-family-base;
+  font-weight: var.$font-weight-normal;
+  line-height: var.$line-height-base;
+  color: var.$text-color-base;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: math.div(var.$gutter-base, 2);
+  font-weight: var.$font-weight-bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  padding: var.$gutter-base * 0.5 var.$gutter-base * 1.3;
+  text-transform: var.$text-transform-base;
+  background-color: var.$btn-background-color-base;
+  font-size: var.$gutter-base * 0.4;
+  font-weight: var.$font-weight-bolder;
+  color: var.$text-color-primary;
+  border: none;
+  &:hover {
+    background-color: var.$btn-background-hover-color;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+}
+
+h2 {
+  color: var.$text-color-secondary;
+  padding-bottom: var.$gutter-base;
+  font-size: var.$gutter-base;
+  margin: 0;
+}
+p {
+  padding-bottom: var.$gutter-base;
+  color: var.$text-color-secondary;
+}
+
+hr {
+  max-width: 20%;
+  margin: 0 auto;
+  border-color: var.$btn-background-hover-color;
+  margin-bottom: 60px;
+}
