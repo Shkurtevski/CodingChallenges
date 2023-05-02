@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/starter-files/challege-01/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Challenge-1</title>
+  </head>
+  <body>
+    <!-- header-section -->
+    <div class="header">
+      <a href="https://www.apple.com/" target="_blank"
+        ><img
+          src="/starter-files/images/apple-logo.png"
+          alt="apple-logo"
+          class="apple-logo-1"
+      /></a>
+
+      <div class="navbar">
+        <ul>
+          <li><a href="#home-section">Home</a></li>
+          <li><a href="#ipad-section">iPad</a></li>
+          <li><a href="#iphonex-section">iPhone X</a></li>
+          <li><a href="#macbook-section">MacBookAir</a></li>
+          <li><a href="#about-section">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- header-section-end -->
+
+    <!-- first-section -->
+    <div class="content-devices" id="home-section">
+      <img
+        src="/starter-files/images/apple-devices.png"
+        alt="apple-devices"
+        class="apple-devices"
+      />
+    </div>
+    <!-- first-section-end -->
+
+    <!-- second-section -->
+    <div class="products">
+      <div class="macbook">
+        <i
+          class="fa fa-laptop"
+          style="
+            font-size: 70px;
+            text-align: center;
+            background-color: rgb(235, 220, 200);
+          "
+        ></i>
+        <div>
+          <p class="devices-text-macbook">MacBookAir</p>
+        </div>
+      </div>
+      <div class="ipad">
+        <i
+          class="fa fa-tablet"
+          class="ipad-icon"
+          style="
+            font-size: 70px;
+            text-align: center;
+            background-color: rgb(241, 208, 163);
+          "
+        ></i>
+        <div>
+          <p class="devices-text-ipad">iPad</p>
+        </div>
+      </div>
+      <div class="iphonex">
+        <i
+          class="fa fa-mobile"
+          style="
+            font-size: 70px;
+            text-align: center;
+            background-color: rgb(122, 243, 203);
+          "
+        ></i>
+        <div>
+          <p class="devices-text-iphonex">iPhone X</p>
+        </div>
+      </div>
+      <div class="about">
+        <i
+          class="fa fa-comments-o"
+          style="
+            font-size: 70px;
+            text-align: center;
+            background-color: rgb(116, 139, 160);
+          "
+        ></i>
+        <div>
+          <p class="devices-text-about">About</p>
+        </div>
+      </div>
+    </div>
+    <!-- second-section-end -->
+
+    <!-- third-section -->
+    <div class="product-description-ipad" id="ipad-section">
+      <div class="product-ipad">
+        <img
+          src="/starter-files/images/tablet.png"
+          alt="ipad-picture"
+          class="product-ipad"
+        />
+      </div>
+      <div class="description-ipad">
+        <h2>iPad</h2>
+        <p>
+          &nbsp;&nbsp;&nbsp;iPad is line of tablet computers designed, developed
+          and marketed by Apple Inc., which run the IOS mobile operating system.
+          The first iPad was released on April 3,2010; the most recent iPad
+          models are iPad (2018), released on March, 2018, the 10.5-inch (270mm)
+          and 12.9-inch (330mm) 2G iPad Pro released on June 13, 2017. The user
+          interface is build around the device's multi-touch screen, including a
+          virtual keyboard. All iPads can connect via WiFi; some models also
+          have a cellular connectivity.
+        </p>
+      </div>
+    </div>
+    <!-- third-section-end -->
+
+    <!-- fourth-section -->
+    <div class="product-description-iphonex" id="iphonex-section">
+      <div class="description-iphonex">
+        <h2>iPhone X</h2>
+        <p>
+          &nbsp;&nbsp;&nbsp;iPhone X is a smartphone designed, developed, and
+          marked by Apple Inc. It was announced on September 12,2017, alongside
+          the iPhone 8 and iPhone 8 Plus at the Steve Jobs Teather in the Apple
+          Park campus. The phone was released on Nobember 3, 2017. This device
+          marks the iPhone series' tenth anniversary, with "X" being the symbol
+          for "ten" in Roman numerals.
+        </p>
+      </div>
+      <div class="product-iphonex">
+        <img
+          src="/starter-files/images/iphoneX.png"
+          alt="iphone-picture"
+          class="product-iphonex"
+        />
+      </div>
+    </div>
+    <!-- fourth-section-end -->
+
+    <!-- flexbox-solution  -->
+    <div class="product-description-macbook" id="macbook-section">
+      <div class="product-macbook">
+        <img
+          src="/starter-files/images/macbook.png"
+          alt="macbookair-picture"
+          class="product-macbook"
+        />
+      </div>
+      <div class="description-macbook">
+        <h2>MacBookAir</h2>
+        <p class="description-content">
+          &nbsp;&nbsp;&nbsp;The MacBook Air is a line of Macintosh subnotebook
+          computers developed and manufactured by Apple Inc. It consist of a
+          full-size keyboard, a machined aluminium case, and a thin light
+          structure. The Air is available with a screen size of (measured
+          diagonally) 13.3 inches (33.782 cm), with different specifications
+          produced by Apple. Since 2011, all MacBook Air models have used
+          solid-state drive storage and intel Core i5 or i7 CPUs.
+        </p>
+      </div>
+    </div>
+    <!-- flexbox-solution-end  -->
+
+    <!-- fifth-section -->
+    <!-- float-and-flexbox-solution (bad solution) -->
+    <!-- <div class="left-section" id="macbook-section">
+      <img
+        src="/starter-files/images/macbook.png"
+        alt="macbookair-picture"
+        class="product-macbook"
+      />
+    </div>
+
+    <div class="right-section">
+      <div>
+        <h2>MacBookAir</h2>
+
+        <p>
+          &nbsp;&nbsp;&nbsp;The MacBook Air is a line of Macintosh subnotebook
+          computers developed and manufactured by Apple Inc. It consist of a
+          full-size keyboard, a machined aluminium case, and a thin light
+          structure. The Air is available with a screen size of (measured
+          diagonally) 13.3 inches (33.782 cm), with different specifications
+          produced by Apple. Since 2011, all MacBook Air models have used
+          solid-state drive storage and intel Core i5 or i7 CPUs.
+        </p>
+      </div>
+    </div>
+    <p class="empty-p"></p> -->
+    <!-- float-and-flexbox-solution-end  -->
+    <!-- fifth-section-end -->
+
+    <!-- sixth-section -->
+    <div class="about-section-container" id="about-section">
+      <div class="team">
+        <h2>Team</h2>
+        <p>80,000+ employees are working for Apple around the World.</p>
+      </div>
+      <div class="salary">
+        <h2>Salary</h2>
+        <p>US$ 125,000 a year is the average employee salary at Apple HQ</p>
+      </div>
+      <div class="earnings">
+        <h2>Earnings</h2>
+        <p>US$ 300,000 per minute. This is the earning of Apple</p>
+      </div>
+    </div>
+    <!-- sixth-section-end -->
+
+    <!-- footer-section-1 -->
+    <div class="footer-container">
+      <div class="facebook">
+        <a href="https://www.facebook.com/" target="_blank">
+          <i class="fa fa-facebook" style="font-size: 30px; color: #fff"></i>
+        </a>
+      </div>
+      <div class="google">
+        <a href="https://www.google.com/" target="_blank">
+          <i class="fa fa-google-plus" style="font-size: 30px; color: #fff"></i>
+        </a>
+      </div>
+      <div class="twitter">
+        <a href="https://twitter.com/" target="_blank">
+          <i class="fa fa-twitter" style="font-size: 30px; color: #fff"></i>
+        </a>
+      </div>
+      <div class="youtube">
+        <a href="https://www.youtube.com/?gl=DE&hl=de" target="_blank">
+          <i
+            class="fa fa-youtube-play"
+            style="font-size: 30px; color: #fff"
+          ></i>
+        </a>
+      </div>
+      <div class="instagram">
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="fa fa-instagram" style="font-size: 30px; color: #fff"></i>
+        </a>
+      </div>
+    </div>
+    <!-- footer-section-1-end -->
+
+    <!-- footer-section-1 -->
+    <div class="footer">
+      <p>&#169; Apple 2019</p>
+    </div>
+    <!-- footer-section-1-end -->
+  </body>
+</html>

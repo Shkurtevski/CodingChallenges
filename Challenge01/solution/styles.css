@@ -1,0 +1,156 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+}
+body{
+      background-color: rgb(57, 140, 188);
+}
+.logo {
+      width: 40px;
+}
+.navbar {
+      width: 100%;
+      padding: 0px 120px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+ul li {
+      display: inline-block;
+      padding: 10px 10px;
+}
+ul li a{
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+}
+.devices {
+      display: flex;
+      justify-content: center;
+      
+}
+.devices img {
+      width: 480px;
+}
+.devices-2 {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+} 
+.macbook {
+      width: 25%;
+      text-align: center;
+      background-color: rgb(185, 222, 210);
+      
+}
+.ipad {
+      width: 25%;
+      text-align: center;
+      background-color: rgb(181, 164, 164);
+}
+.iphonex {
+      width: 25%;
+      text-align: center;
+      background-color: rgb(218, 224, 218));
+}
+.about{
+      width: 25%;
+      text-align: center;
+      background-color: grey;
+}
+.ipad-foto {
+      width: 50%;
+      align-items: center;
+      background-color: rgb(218, 224, 218);
+      float: left;
+      display: flex;
+      justify-content: center;
+}
+.ipad-foto img {
+      width: 260px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+}
+.ipad-txt{
+      width: 50%;
+      text-align: center;
+      background-color: grey;
+      color: white;
+      float: right;
+      padding: 42px;
+}
+.ipad-txt h1 {
+      line-height: 30px;
+}
+.iphonex-txt {
+      width: 50%;
+      text-align: center;
+      background-color: grey;
+      color: white;
+      float: left;
+      padding: 42px;
+}
+.iphonex-foto {
+      width: 50%;
+      align-items: center;
+      background-color: rgb(218, 224, 218);
+      float: left;
+      display: flex;
+      justify-content: center;
+}
+.iphonex-foto img {
+      width: 260px;
+      
+}
+.laptop-foto {
+      width: 50%;
+      align-items: center;
+      background-color: rgb(218, 224, 218);
+      display: flex;
+      justify-content: center;
+}
+.laptop-foto img {
+      width: 260px;
+}
+.laptop-txt {
+      width: 50%;
+      text-align: center;
+      background-color: grey;
+      color: white;
+      float: right;
+      padding: 42px;
+}
+.funf {
+      display: inline-flex;
+      justify-content: center;
+}
+.six {
+      display: inline-flex;
+}
+.team {
+      width: 33.3%;
+      background-color: brown;
+      text-align: center;
+}
+.salary {
+      width: 33.3%;
+      background-color: rgb(218, 224, 218);
+      text-align: center;
+} 
+.earnings {
+     width: 33.3;
+     background-color: grey;
+     text-align: center;
+     padding: 20px;
+}
+.icons-last {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      padding: 70px;
+      color: white;
+}
