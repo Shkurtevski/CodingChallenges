@@ -1,0 +1,555 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--darkblue-color);
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --darkblue-color: rgba(39, 40, 51, 1);
+  --darkblue-color-opacity: rgba(39, 40, 51, 0.85);
+  --red-color: #e44c65;
+  --blue-color: rgb(93, 93, 238);
+  --green-color: rgb(45, 212, 81);
+  --background-icon-color: rgba(255, 255, 255, 0.1);
+  --p-color: #fff;
+  --h1-color: #fff;
+  --h2-color: #fff;
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 2rem;
+  --p-font-size: 1.2rem;
+}
+
+.header::after,
+.section-one::after,
+.section-three::after,
+.icons-container::after {
+  display: block;
+  content: "";
+  width: 100%;
+  clear: both;
+}
+
+.background-attachment {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  filter: brightness(90%);
+  background-attachment: fixed;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+/* <!----------------- scrollbar -----------------> */
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #434343, #434343 1px, #111 0, #111);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #434343;
+  border-radius: 16px;
+  box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%),
+    inset -2px -2px 2px rgb(0 0 0 / 25%);
+}
+
+/* <--------------------------------------------- 
+        HEADER-CSS
+        ---------------------------------------------> */
+.header {
+  height: 100vh;
+  background-color: var(--darkblue-color);
+  position: relative;
+}
+
+.left-nav {
+  float: left;
+  width: 50%;
+  background-color: var(--darkblue-color);
+}
+
+ul {
+  padding-right: 40px;
+}
+
+li {
+  display: inline-block;
+  color: var(--p-color);
+  padding: 10px;
+  margin: 10px;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+.btn-sign-up {
+  background-color: var(--red-color);
+  border-radius: 5px;
+}
+
+.right-nav {
+  float: right;
+  background-color: var(--darkblue-color);
+  display: inline;
+}
+
+/* <--------------------------------------------- 
+        SUB-HEADER-CSS
+        ---------------------------------------------> */
+.sub-header {
+  position: absolute;
+  left: 3%;
+  right: 0;
+  top: 40%;
+  text-align: center;
+}
+
+.sub-header h1 {
+  font-size: var(--h1-font-size);
+  color: var(--h1-color);
+  text-align: center;
+}
+
+.sub-header p {
+  padding: 10px;
+  color: var(--p-color);
+  font-size: var(--p-font-size);
+}
+
+/* <--------------------------------------------- 
+        SECTION-ONE-PARALLAX-EFFECT-CSS
+        ---------------------------------------------> */
+.section-one {
+  background-image: url(./images/picture1.jpg);
+}
+
+.section-one-content {
+  width: 100%;
+  background-color: var(--darkblue-color-opacity);
+  min-height: 450px;
+  position: absolute;
+  top: 53.6%;
+  border-top: 5px solid var(--red-color);
+}
+
+.text-one {
+  float: left;
+  width: 33.3%;
+  padding-top: 50px;
+  padding-left: 20px;
+  margin: 10px auto;
+}
+
+.text-one h2 {
+  font-size: var(--h2-font-size);
+  color: var(--h2-color);
+  padding: 10px 40px 30px 40px;
+}
+
+.text-one p {
+  font-size: var(--p-font-size);
+  color: var(--p-color);
+  padding: 10px 40px;
+  line-height: 40px;
+}
+
+.text-two {
+  float: right;
+  width: 33.3%;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 10px auto;
+}
+
+.text-two p {
+  font-size: var(--p-font-size);
+  color: var(--p-color);
+  padding: 10px 40px;
+  line-height: 30px;
+}
+
+.text-three {
+  float: right;
+  width: 33.3%;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 10px auto;
+}
+
+.text-three p {
+  font-size: var(--p-font-size);
+  color: var(--p-color);
+  padding: 10px 40px;
+  line-height: 30px;
+}
+
+/* <--------------------------------------------- 
+        SECTION-TWO-PARALLAX-EFFECT-CSS
+        ---------------------------------------------> */
+.section-two {
+  background-image: url(./images/picture2.jpeg);
+}
+
+.section-two-content {
+  float: right;
+  width: 35%;
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: var(--darkblue-color-opacity);
+  border-left: 5px solid var(--blue-color);
+  padding-top: 80px;
+}
+
+.section-two-content h2 {
+  font-size: var(--h2-font-size);
+  color: var(--h2-color);
+  padding: 40px 50px;
+  margin-left: 50px;
+}
+
+.section-two-content p {
+  font-size: var(--p-font-size);
+  color: var(--p-color);
+}
+
+.ps-1 {
+  line-height: 30px;
+  padding: 40px 50px;
+  margin-left: 50px;
+}
+
+.ps-2 {
+  line-height: 30px;
+  padding: 40px 50px;
+  margin-left: 50px;
+}
+
+.btn-one {
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-bottom: 120px;
+  padding: 15px 30px;
+  background-color: transparent;
+  color: var(--p-color);
+  border: 1px solid var(--p-color);
+  border-radius: 5px;
+}
+
+/* <--------------------------------------------- 
+        SECTION-THREE-PARALLAX-EFFECT-CSS
+        ---------------------------------------------> */
+.section-three {
+  background-image: url(./images/picture3.jpg);
+}
+
+.section-three-content {
+  float: left;
+  width: 35%;
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: var(--darkblue-color-opacity);
+  border-right: 5px solid var(--green-color);
+  padding-top: 80px;
+}
+
+.section-three-content h2 {
+  font-size: var(--h2-font-size);
+  color: var(--h2-color);
+  padding: 40px 50px;
+  margin-left: 50px;
+}
+
+.section-three-content p {
+  font-size: var(--p-font-size);
+  color: var(--p-color);
+}
+
+.ps-3 {
+  line-height: 30px;
+  padding: 40px 50px;
+  margin-left: 50px;
+}
+
+.ps-4 {
+  line-height: 30px;
+  padding: 40px 50px;
+  margin-left: 50px;
+}
+
+/* <--------------------------------------------- 
+        SECTION-FOUR-CONTENT-CSS-BOTH
+        ---------------------------------------------> */
+.section-four-container {
+  max-width: 100%;
+  background-color: var(--darkblue-color);
+}
+
+.section-four-content {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-four-content h2 {
+  font-size: var(--h2-font-size);
+  color: var(--h2-color);
+  padding-top: 100px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.section-four-content p {
+  font-size: var(--p-font-size);
+  color: var(--p-color);
+  padding-bottom: 100px;
+  margin: 0;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  max-width: 30%;
+  background: var(--red-color);
+  margin: 0 auto;
+}
+
+.inline-items-padding {
+  padding-top: 50px;
+}
+
+/* <--------------------------------------------- 
+        SECTION-FOUR-ICONS-CSS
+        ---------------------------------------------> */
+.icons-container {
+  background-color: var(--darkblue-color);
+  max-width: 100%;
+  color: var(--p-color);
+  font-size: var(--p-font-size);
+  margin: 0 auto;
+}
+
+.icons-first-line {
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: var(--darkblue-color);
+}
+
+.icons-secont-line {
+  margin: 0 auto;
+  background-color: var(--darkblue-color);
+}
+
+.fa-chart-area,
+.fa-comment,
+.fa-flask,
+.fa-paper-plane,
+.fa-copy,
+.fa-lock {
+  border-radius: 50%;
+  background-color: var(--background-icon-color);
+  font-size: 2.5rem;
+  padding: 20px;
+  color: var(--p-color);
+  margin-bottom: 22px;
+}
+
+.inline-icons {
+  max-width: 33.3%;
+  margin: 0 auto;
+  text-align: center;
+  float: left;
+  background-color: var(--darkblue-color);
+  padding: 50px 60px 50px 60px;
+}
+
+.section-four-button {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.btn-3 {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+  width: 200px;
+  height: 40px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.inline-icons-padding {
+  padding-bottom: 100px;
+}
+
+/* <--------------------------------------------- 
+        FOOTER-SECTIOM-ONE-CSS
+        ---------------------------------------------> */
+.section-five {
+  background-color: var(--red-color);
+  text-align: center;
+  padding-bottom: 100px;
+}
+.section-five h2 {
+  padding-top: 100px;
+  padding-bottom: 20px;
+  color: var(--h2-color);
+  font-size: var(--h2-font-size);
+  margin: 0;
+}
+
+.section-five p {
+  padding-bottom: 15px;
+  font-size: var(--p-font-size);
+  color: var(--p-color);
+  margin: 0;
+}
+
+.email-input {
+  width: 350px;
+  height: 40px;
+  background-color: var(--red-color);
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+::placeholder {
+  color: #d3d3d3;
+  padding-left: 15px;
+}
+
+/* <!--------------------------------------------- 
+        FOOTER-SECTION-TWO-CSS
+        ---------------------------------------------> */
+.section-six {
+  background-color: var(--darkblue-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.sub-section-six {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.html-5 {
+  border-bottom: 1px dashed #d3d3d3;
+}
+
+.html-5:hover {
+  cursor: pointer;
+}
+
+.small-txt {
+  text-align: center;
+  color: #d3d3d3;
+}
+
+.submit-btn {
+  background-color: white;
+  color: var(--red-color);
+  width: 160px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.submit-btn:hover {
+  cursor: pointer;
+}
+
+.fa-twitter,
+.fa-facebook-f,
+.fa-linkedin-in,
+.fa-instagram,
+.fa-github,
+.fa-envelope {
+  color: #d3d3d3;
+  font-size: 30px;
+}
+
+a {
+  margin-left: 20px;
+}
+
+/* <!----------------- media-queries -----------------> */
+@media (max-width: 1605px) {
+  .section-three,
+  .section-two,
+  .section-one {
+    overflow: scroll;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .text-one,
+  .text-two,
+  .text-three,
+  .ps-1,
+  .ps-2,
+  .ps-3,
+  .ps-4 {
+    max-width: 100%;
+    width: 80%;
+    min-height: 100%;
+    padding: 20px;
+  }
+  .section-one {
+    width: 100%;
+    max-width: 100%;
+  }
+  .section-two-content,
+  .section-three-content {
+    max-width: 100%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 825px) {
+  .section-four,
+  .icons-first-line,
+  .inline-icons,
+  .icons-second-line {
+    display: inline-block;
+    max-width: 100%;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 590px) {
+  .section-two,
+  .section-three,
+  .text-one,
+  .text-two,
+  .text-three,
+  .ps-1,
+  .ps-2,
+  .ps-3,
+  .ps-4 {
+    max-width: 100%;
+    width: 100%;
+    min-height: 100%;
+    margin: 5px 0px 0 0px;
+  }
+}

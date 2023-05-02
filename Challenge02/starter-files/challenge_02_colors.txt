@@ -1,0 +1,6 @@
+darkblue - rgba(39, 40, 51, 1)
+darkblue opacity (за дивовите со контент) - rgba(39, 40, 51, .85)
+red - #e44c65
+blue - rgb(93, 93, 238)
+green - rgb(45, 212, 81)
+lightwhite (позадинска боја за кружните иконки) - rgba(255, 255, 255, .1)
