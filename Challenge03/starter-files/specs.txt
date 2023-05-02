@@ -1,0 +1,16 @@
+colors:
+
+lightgrey sections - rgb(246, 246, 246)
+dark buttons - rgb(48, 47, 47)
+red box - rgb(255, 84, 68)
+purple box - rgb(170, 45, 182)
+cyan box - rgb(30, 194, 164)
+blue box - rgb(39, 139, 224)
+box-shadow color - 0px 1px 5px 1px rgba(50, 50, 50, .3)
+
+buttons hover color - rgb(45, 45, 45)
+social sections color - #464646
+
+font-family: 
+ubuntu mono google font
+https://fonts.google.com/specimen/Ubuntu+Mono?query=ubuntu+mono

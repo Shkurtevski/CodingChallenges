@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@400;500;700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Challenge-03</title>
+  </head>
+  <body>
+    <!---------------------- responsive-mobile-navbar ---------------------->
+    <div class="mobile-container">
+      <div class="topnav">
+        <a
+          href="#home"
+          class="active"
+          style="text-transform: uppercase; color: #000; font-weight: 600"
+          >corepreneurs</a
+        >
+        <div id="myLinks">
+          <a href="#home">Home</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#blog">Blog</a>
+          <a href="#about">About Us</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    <!---------------------- header ---------------------->
+    <header>
+      <!---------------------- navbar-dropdown-menu ---------------------->
+      <div class="navbar">
+        <div class="logo">
+          <a href="#">Codepreneurs</a>
+          <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+        <div class="navbar-container">
+          <div class="dropdown">
+            <a href="#">Home</a>
+            <i class="fa-solid fa-chevron-down"></i>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <a href="#">About Us</a>
+          <div class="dropdown">
+            <a href="#" id="#portfolio1">Portfolio</a>
+            <i class="fa-solid fa-chevron-down"></i>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#">Blog</a>
+            <i class="fa-solid fa-chevron-down"></i>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <a href="#">Pricing</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </header>
+    <!---------------------- section-one ---------------------->
+    <div class="main-container height-100 bg-color" id="home">
+      <div class="content-section-one">
+        <h1>corepreneurs portfolio template</h1>
+        <h3>
+          one page & multipage + 8 homepages + whitebox & layout + 25 +
+          portfolio layout
+        </h3>
+        <button title="Click me" id="spinButton">view all demo</button>
+      </div>
+    </div>
+
+    <!---------------------- section-two ---------------------->
+    <div class="section-two-cards" id="portfolio">
+      <div class="cards-content">
+        <div class="card red-card">
+          <p class="numbers">60+</p>
+          <p class="p-font-size-card">total pages</p>
+        </div>
+        <div class="card purple-card">
+          <p class="numbers">8+</p>
+          <p class="p-font-size-card">home style</p>
+        </div>
+        <div class="card cyan-card">
+          <p class="numbers">6+</p>
+          <p class="p-font-size-card">home style</p>
+        </div>
+        <div class="card blue-card">
+          <p class="numbers">45+</p>
+          <p class="p-font-size-card">portfolio style</p>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------- section-three ---------------------->
+    <div class="main-container bg-color" id="blog">
+      <div class="content-section-one padding-top">
+        <h2 class="h2-font-size">choose your demo</h2>
+        <div class="buttons margin-bottom">
+          <button title="Click me" class="btn btn-all">All</button>
+          <button title="Click me" class="btn">Home</button>
+          <button title="Click me" class="btn">Portfolio</button>
+          <button title="Click me" class="btn">Blog</button>
+          <button title="Click me" class="btn">Others</button>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------- section-three-cards ---------------------->
+    <div class="main-container bg-color">
+      <div class="bottom-cards padding-bottom">
+        <div class="cards card-1">
+          <img src="./images/page1.png" alt="blog-picture" class="card-img" />
+        </div>
+        <div class="cards card-2">
+          <img src="./images/page-2.png" alt="blog-picture" class="card-img" />
+        </div>
+        <div class="cards card-3">
+          <img
+            src="./images/page-3.png"
+            alt="blog-picture"
+            class="card-img padding-right"
+          />
+        </div>
+
+        <div class="cards card-4">
+          <img src="./images/page1.png" alt="blog-picture" class="card-img" />
+        </div>
+        <div class="cards card-5">
+          <img src="./images/page-2.png" alt="blog-picture" class="card-img" />
+        </div>
+        <div class="cards card-6">
+          <img
+            src="./images/page-3.png"
+            alt="blog-picture"
+            class="card-img padding-right"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!---------------------- section-four-text ---------------------->
+    <div class="main-container" id="about">
+      <div class="content-section-one">
+        <h2 class="padding-top h2-font-size">codepreneurs feature</h2>
+        <p style="margin-bottom: 0">
+          There are so many reasons to choose minmax, here are a few items:
+        </p>
+        <hr />
+      </div>
+    </div>
+    <!---------------------- section-four-content ---------------------->
+    <!---------------------- list-items-unordered-list-solution ---------------------->
+    <div class="main-container padding-top padding-bottom">
+      <div class="list-items content-section-one">
+        <div class="list-text">
+          <ul>
+            <li class="content-text">valid html & css</li>
+            <li class="content-text">5+ footer variation</li>
+            <li class="content-text">fully responsive</li>
+            <li class="content-text">well commented & css files</li>
+          </ul>
+        </div>
+        <div class="list-text">
+          <ul>
+            <li class="content-text">valid html & css</li>
+            <li class="content-text">5+ footer variation</li>
+            <li class="content-text">fully responsive</li>
+            <li class="content-text">well commented & css files</li>
+          </ul>
+        </div>
+        <div class="list-text">
+          <ul>
+            <li class="content-text">valid html & css</li>
+            <li class="content-text">5+ footer variation</li>
+            <li class="content-text">fully responsive</li>
+            <li class="content-text">well commented & css files</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------- list-items-paragraph-solution ---------------------->
+    <!-- <div class="main-container">
+      <div class="section-four-content padding-top">
+        <div class="content">
+          <p class="content-text">valid html & css</p>
+          <p class="content-text">5+ footer variation</p>
+          <p class="content-text">fully responsive</p>
+          <p class="content-text">well commented & css files</p>
+        </div>
+        <div class="content">
+          <p class="content-text">valid html & css</p>
+          <p class="content-text">5+ footer variation</p>
+          <p class="content-text">fully responsive</p>
+          <p class="content-text">well commented & css files</p>
+        </div>
+        <div class="content">
+          <p class="content-text">valid html & css</p>
+          <p class="content-text">5+ footer variation</p>
+          <p class="content-text">fully responsive</p>
+          <p class="content-text">well commented & css files</p>
+        </div>
+      </div>
+    </div> -->
+
+    <!---------------------- footer ---------------------->
+    <div class="footer">
+      <div class="footer-one">
+        <p>CODEPRENEURS</p>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><i class="fa-brands fa-facebook-f footer-icons"></i
+        ></a>
+        <a href="https://twitter.com/home" target="_blank"
+          ><i class="fa-brands fa-twitter footer-icons"></i
+        ></a>
+        <a href="https://www.linkedin.com/feed/" target="_blank"
+          ><i class="fa-brands fa-linkedin-in footer-icons"></i
+        ></a>
+        <a href="https://www.behance.net/" target="_blank"
+          ><i class="fa-brands fa-behance footer-icons"></i
+        ></a>
+        <a href="https://www.nba.com/" target="_blank"
+          ><i class="fa-solid fa-basketball footer-icons"></i
+        ></a>
+        <a href="https://www.google.com/" target="_blank"
+          ><i class="fa-brands fa-google-plus-g footer-icons"></i
+        ></a>
+      </div>
+      <div class="footer-two">
+        <div>
+          <small>Copyright &#169; Codepreneurs 2019 All rights reserved.</small>
+        </div>
+        <div>
+          <small>Created by philosopher.mk</small>
+        </div>
+      </div>
+    </div>
+    <!---------------------- responsive-mobile-navbar-script ---------------------->
+    <script src="./script.js"></script>
+  </body>
+</html>
