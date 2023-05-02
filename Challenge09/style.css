@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(29, 29, 29);
+}
+
+.banner h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.banner label {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.banner input {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.banner button {
+  padding: 5px 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.banner button:hover {
+  color: #fff;
+  background-color: rgb(29, 29, 29);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.banner a {
+  margin-bottom: 10px;
+  color: red;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.banner .green {
+  color: green;
+}
+
+.banner #result {
+  color: #fff;
+  font-size: 1.2rem;
+}
