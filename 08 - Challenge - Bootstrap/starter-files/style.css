@@ -1,0 +1,105 @@
+nav .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28 299, 299, 299, 0.98%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-nav a:focus {
+  outline: none;
+  border-left: 2px solid white;
+}
+nav .navbar-toggler {
+  border: none !important;
+}
+.navbar-nav .nav-link.active {
+  border-left: 2px solid white !important;
+}
+.navbar-nav .nav-link {
+  padding-left: 8px;
+}
+.text-grey {
+  color: rgb(158, 158, 158) !important;
+}
+.bg-red {
+  background-color: rgb(219, 1, 1) !important;
+}
+.bg-dark-custom {
+  background-color: rgb(32, 32, 32) !important;
+}
+.border-black {
+  border-color: #000 !important;
+}
+.height-custom {
+  height: 62vh;
+}
+.custom-padding {
+  padding-top: 56px;
+}
+.carousel-background {
+  min-height: 62vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.carousel-01 {
+  background-image: url(./Images/image1.jpg);
+}
+.carousel-02 {
+  background-image: url(./Images/image2.jpg);
+}
+.carousel-03 {
+  background-image: url(./Images/image3.jpg);
+}
+.section-background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.section-background01 {
+  background-image: url(./Images/lights.jpg);
+}
+.section-background02 {
+  background-image: url(./Images/media.jpg);
+  background-blend-mode: soft-light;
+  background-color: rgb(37, 37, 37);
+}
+.fa-solid {
+  font-size: 2rem;
+}
+.width-custom {
+  width: 350px;
+  max-width: 100%;
+  position: absolute;
+  top: -70px;
+}
+.width-custom1 {
+  width: 40px;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+.accordion-button::after {
+  display: none !important;
+}
+
+.accordion-button.collapsed::after {
+  display: none !important;
+}
+.btn-custom {
+  border: solid 1px rgb(219, 1, 1) !important;
+  color: rgb(219, 1, 1) !important;
+  background-color: transparent !important;
+  width: 100% !important;
+}
+.btn-custom:hover {
+  background-color: rgb(219, 1, 1) !important;
+  color: #fff !important;
+}
+.btn-custom01 {
+  border: solid 1px rgb(219, 1, 1) !important;
+  color: rgb(219, 1, 1) !important;
+  background-color: transparent !important;
+}
+.btn-custom01:hover {
+  background-color: rgb(219, 1, 1) !important;
+  color: #fff !important;
+}
+.custom-font-size{
+  font-size: 1.2rem;
+}
