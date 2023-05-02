@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+body {
+  font-family: var.$font-family-base;
+  font-weight: var.$font-weight-normal;
+  line-height: var.$line-height-base;
+  color: var.$text-color-base;
+  margin: 0;
+  padding-left: 20%;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: math.div(var.$gutter-base, 2);
+  font-weight: var.$font-weight-bold;
+}

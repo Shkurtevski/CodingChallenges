@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+::-webkit-scrollbar {
+  width: 10px;
+
+  &-thumb {
+    background: linear-gradient(to bottom, var.$text-color-base, var.$text-color-secondary);
+    border-radius: 5px;
+  }
+
+  &-track {
+    background: #f5f5f5;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,107 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+body {
+  .navbar-small-screen {
+    display: none;
+    .hamburger-menu-icon {
+      .a-icon {
+        @include mix.laptop-m-styles {
+          color: var.$text-color-secondary;
+          font-size: var.$gutter-base * 0.5;
+          border: var.$gutter-base * 0.03 solid var.$text-color-secondary;
+          padding: var.$gutter-base * 0.2 var.$gutter-base * 0.4;
+        }
+      }
+    }
+    @include mix.laptop-m-styles {
+      display: flex;
+      justify-content: space-between;
+      z-index: 50;
+      background-color: var.$background-color-base;
+      align-items: center;
+      padding: var.$gutter-base * 0.8;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+  .sidebar {
+    @extend %section;
+    display: flex;
+    position: fixed;
+    height: 100%;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 20%;
+    .navbar-small-screen {
+      display: none;
+    }
+    .wrapper {
+      @extend %wrap;
+      position: relative;
+      .logo {
+        @include mix.custom {
+          max-width: var.$gutter-base * 3.5;
+        }
+        img {
+          margin-bottom: var.$gutter-base * 3;
+          padding-right: 0;
+        }
+      }
+
+      .navbar-menu {
+        ul {
+          list-style-type: none;
+          padding-left: 0;
+          li {
+            padding-bottom: var.$gutter-base * 1;
+            a {
+              text-decoration: none;
+              font-size: var.$gutter-base * 0.7;
+              color: var.$text-color-secondary;
+              &:hover {
+                text-decoration: underline;
+              }
+              @include mix.custom {
+                font-size: var.$gutter-base * 0.5;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .sidebar-footer {
+        position: absolute;
+        bottom: 0;
+        p {
+          font-size: var.$gutter-base * 0.5;
+          color: var.$text-color-secondary;
+          .brainster {
+            color: var.$text-color-base;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+          @include mix.custom {
+            font-size: var.$gutter-base * 0.4;
+          }
+        }
+      }
+    }
+    @include mix.laptop-m-styles {
+      display: none;
+    }
+  }
+  @include mix.laptop-m-styles {
+    padding-left: 0;
+    padding-top: 8%;
+  }
+}
