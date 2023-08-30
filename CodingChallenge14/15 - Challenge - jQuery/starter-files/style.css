@@ -1,0 +1,244 @@
+/*----------------->/css-resets/<-----------------*/
+h1,
+h2,
+h3 {
+  color: #a2a2a2;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+:root {
+  --primary-color: #fff;
+  --background-color: #000;
+  --background-color-1: rgba(0, 0, 0, 0.4);
+  --span-color-white: #ffebf7;
+  --span-color-red: #ba0000;
+  --result-color: #979797;
+  --background-color-body: #242021;
+}
+
+/*----------------->/main-content-styles/<-----------------*/
+.background-image {
+  background-image: url(./images/raceTrack.jpg);
+  background-size: auto 50vh;
+  height: 50vh;
+}
+
+.background-image :nth-child(1) {
+  position: absolute;
+  left: 0;
+  width: 300px;
+  top: 13%;
+}
+
+.background-image :nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 38%;
+  width: 300px;
+}
+
+#race {
+  text-align: center;
+  background-color: var(--background-color-body);
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: var(--primary-color);
+  font-size: 150px;
+  width: 100%;
+  height: 50%;
+  overflow: auto;
+  z-index: 1;
+  background-color: var(--background-color);
+  background-color: var(--background-color-1);
+}
+
+.darken {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: var(--primary-color);
+  font-size: 150px;
+  width: 100%;
+  height: 50%;
+  overflow: auto;
+  z-index: 1;
+  background-color: var(--background-color);
+  background-color: var(--background-color-1);
+}
+
+button {
+  padding: 0.2rem 4rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  color: var(--primary-color);
+  background: unset;
+}
+
+button:hover {
+  color: var(--background-color);
+  background: var(--primary-color);
+}
+
+.car-one {
+  width: 30%;
+}
+
+.car-two {
+  width: 30%;
+}
+
+.car-one-result h3 {
+  color: var(--primary-color);
+}
+
+.car-two-result h3 {
+  color: var(--span-color-red);
+}
+
+.car-one-result p {
+  padding: 5%;
+  width: 65%;
+  margin-top: unset;
+  margin-bottom: unset;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid var(--primary-color);
+}
+
+.car-two-result p {
+  padding: 5%;
+  width: 65%;
+  margin-top: unset;
+  margin-bottom: unset;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid var(--primary-color);
+}
+
+#car-one-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--result-color);
+}
+
+#car-two-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--result-color);
+}
+
+.previous-results h3 {
+  margin-bottom: 5rem !important;
+}
+
+.text-white {
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
+.counter {
+  color: var(--primary-color);
+}
+
+.previous-result-p-one {
+  margin-top: 3.1rem;
+}
+
+.previous-results p {
+  width: 80%;
+  border: 1px solid var(--primary-color);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+.white-span {
+  color: var(--span-color-white);
+  font-weight: bold;
+}
+
+.red-span {
+  color: var(--span-color-red);
+  font-weight: bold;
+}
+
+/*----------------->/media-queries/<-----------------*/
+@media (max-width: 1440px) {
+  .background-image :nth-child(1) {
+    position: absolute;
+    left: 0;
+    top: 18%;
+    width: 200px;
+  }
+  .background-image :nth-child(2) {
+    position: absolute;
+    left: 0;
+    top: 43%;
+    width: 200px;
+  }
+  .car-one-result p {
+    padding: 5%;
+    width: 80%;
+  }
+
+  .car-two-result p {
+    padding: 5%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .background-image :nth-child(1) {
+    position: absolute;
+    left: 0;
+    width: 150px;
+    top: 22%;
+  }
+  .background-image :nth-child(2) {
+    position: absolute;
+    left: 0;
+    top: 47%;
+    width: 150px;
+  }
+  .results {
+    margin-bottom: 1rem;
+  }
+  .previous-result-p-one {
+    margin-top: 1rem;
+  }
+  #previous-results {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    padding: 0.3rem 1.5rem;
+  }
+}
