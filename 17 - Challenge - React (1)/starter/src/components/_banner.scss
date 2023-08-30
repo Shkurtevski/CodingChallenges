@@ -1,0 +1,33 @@
+@use "../css/abstracts/mixins" as mix;
+@use "../css/abstracts/variables" as var;
+@use "sass:math";
+
+.banner {
+  @extend %flex-center;
+  @extend %background-image-setup;
+  @extend %h-100;
+  color: var.$text-color-primary;
+  .banner-inner {
+    @extend %wrap;
+    h1 {
+      margin-bottom: 16px;
+    }
+    p,
+    button {
+      text-transform: var.$text-transform-uppercase;
+    }
+    button {
+      padding: 0.5rem 2rem;
+      border: none;
+      background-color: var.$background-color-base;
+      color: var.$text-color-base;
+      border-radius: var.$border-radius;
+      cursor: pointer;
+      &:hover {
+        background-color: var.$text-color-base;
+        color: var.$background-color-base;
+        transition: 0.4s;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@use "../css/abstracts/mixins" as mix;
+@use "../css/abstracts/variables" as var;
+@use "sass:math";
+
+.place {
+  @extend %flex-center;
+  @extend %background-image-grid-setup;
+  .place-content {
+    padding: 10px;
+    z-index: 11;
+  }
+}

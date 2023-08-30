@@ -1,0 +1,69 @@
+@use "./variables" as var;
+@use "sass:math";
+
+%section {
+  padding-top: (var.$gutter-base * 2);
+  padding-bottom: (var.$gutter-base * 2);
+
+  @media (max-width: 768px) {
+    padding-top: (var.$gutter-base);
+    padding-bottom: (var.$gutter-base);
+  }
+}
+
+%wrap {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 999px) {
+    width: 100%;
+    padding-left: math.div(var.$gutter-base, 2);
+    padding-right: math.div(var.$gutter-base, 2);
+  }
+}
+
+%h-100 {
+  min-height: 100vh;
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%flex-justify-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+%background-image-setup {
+  background-image: url("../../../public/mountain.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 100%;
+}
+
+%background-image-grid-setup {
+  text-align: center;
+  flex-direction: column;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    mix-blend-mode: multiply;
+  }
+}

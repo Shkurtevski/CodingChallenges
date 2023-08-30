@@ -1,0 +1,19 @@
+@use "../css/abstracts/mixins" as mix;
+@use "../css/abstracts/variables" as var;
+@use "sass:math";
+
+.footer {
+  @extend %flex-center;
+  @extend %section;
+  flex-direction: column;
+  background-color: var.$background-color-secondary;
+  a {
+    text-decoration: none;
+    color: var.$text-color-secondary;
+    font-size: 1.5rem;
+    &:hover {
+        color: var.$text-color-secondary-hover;
+        transition: 0.4s;
+    }
+  }
+}

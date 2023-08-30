@@ -1,0 +1,14 @@
+@use "../css/abstracts/mixins" as mix;
+@use "../css/abstracts/variables" as var;
+@use "sass:math";
+
+.place-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,36 @@
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+body {
+  font-family: var.$font-family-base;
+  font-size: var.$font-size-base;
+  font-weight: var.$font-weight-base;
+  line-height: var.$line-height-base;
+  color: var.$text-color-base;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: math.div(var.$gutter-base, 2);
+  line-height: var.$line-height-small;
+  font-weight: var.$font-weight-bold;
+}
+
+h1 {
+  font-size: var.$heading-size-bigger;
+
+  @media (max-width: 425px) { font-size: var.$heading-size-big; }
+}
+
+h2 {
+  font-size: var.$heading-size-big;
+
+  @media (max-width: 425px) { font-size: var.$heading-size-small; }
+}
+
+h3 {
+  font-size: var.$heading-size-tiny;
+
+  @media (max-width: 425px) { font-size: var.$font-size-medium; }
+}

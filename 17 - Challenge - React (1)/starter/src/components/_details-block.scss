@@ -1,0 +1,38 @@
+@use "../css/abstracts/mixins" as mix;
+@use "../css/abstracts/variables" as var;
+@use "sass:math";
+
+.details-block {
+  @extend %section;
+  .details-block-inner {
+    @extend %wrap;
+    display: flex;
+    .text-content {
+      @extend %flex-justify-center;
+      width: 50%;
+      .about {
+        color: var.$text-color-secondary;
+        text-transform: var.$text-transform-uppercase;
+      }
+      h2 {
+        margin-bottom: 16px;
+      }
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+    }
+    .image {
+      @extend %flex-center;
+      width: 50%;
+      img {
+        border-radius: 50%;
+      }
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+    }
+    @media (max-width: 600px) {
+      flex-wrap: wrap;
+    }
+  }
+}
