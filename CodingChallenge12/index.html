@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Challenge 12 - Brainster</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-container">
+          <p>Book Progress Manager</p>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="main-container">
+        <div class="container">
+          <div class="main-content">
+            <div class="books">
+              <h2>Books</h2>
+            </div>
+            <div class="books-progress">
+              <h2>Book reading progress</h2>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="table-container"></div>
+        </div>
+        <div class="container">
+          <div class="form">
+            <h2>Add Book to the list</h2>
+            <form action="">
+              <input type="text" id="input-title" placeholder="Book Title" />
+              <input type="text" id="input-author" placeholder="Book Author" />
+              <input
+                type="number"
+                id="input-onpage"
+                placeholder="Current Page"
+              />
+              <input
+                type="number"
+                id="input-maxpages"
+                placeholder="Book Max Pages"
+              />
+              <button id="submit">Add to List</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-container">
+          <p>Brainster</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
+    <script src="./table.js"></script>
+    <script src="./form.js"></script>
+  </body>
+</html>

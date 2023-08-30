@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header nav .nav-container p,
+.footer .footer-container p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 20px;
+}
+
+.form h2 {
+  text-align: left;
+  color: #202020;
+}
+
+.nav-container,
+.footer {
+  background-color: #f3f3f3;
+  color: #202020;
+}
+
+.container {
+  width: 80%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.main-content {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border-bottom: 1px solid #202020;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.books {
+  margin-right: 100px;
+}
+
+.books,
+.books-progress {
+  font-weight: bold;
+  color: #202020;
+}
+
+.books ul,
+.books-progress ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.books ul:not(:last-child),
+.books-progress ul:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+
+.books h2,
+.books-progress h2 {
+  margin: 0 0 20px 0;
+  color: #202020;
+}
+
+.table-container {
+  margin-bottom: 30px;
+}
+
+.progress-bar {
+  height: 20px;
+  border: none;
+  position: relative;
+  background-color: rgb(187, 187, 187);
+}
+
+.progress-bar .progress-fill {
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  background-color: green;
+  top: 0;
+  left: 0;
+}
+
+.progress-bar .progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #202020;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Progress Bar Styles */
+.progress-bar {
+  width: 100%;
+  background-color: #f2f2f2;
+  height: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #4caf50;
+  width: 0;
+  transition: width 0.5s;
+}
+
+.progress-text {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #3e8e41;
+}
+
+@media (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
+
+  th,
+  td {
+    padding: 6px;
+  }
+
+  .progress-bar {
+    height: 16px;
+  }
+
+  .progress-text {
+    font-size: 10px;
+  }
+
+  .container {
+    width: 99%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .books {
+    margin-right: 0;
+    align-self: flex-start;
+  }
+
+  .books-progress {
+    align-self: flex-start;
+  }
+
+  .books ul {
+    margin-bottom: 10px;
+  }
+
+  .books ul:last-child {
+    margin-bottom: 20px;
+  }
+
+  .container {
+    width: 90%;
+  }
+}
