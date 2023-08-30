@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 100vh;
+  background-image: url(./Image/img.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  width: 100%;
+}
+.text-area-wrapper h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+  color: #fff;
+  padding: 50px 0 20px 0;
+}
+textarea:hover {
+  cursor: pointer;
+}
+.keyboard-wrapper {
+  width: 100%;
+  background-color: rgba(22, 22, 22, 0.5);
+  padding: 50px 0;
+}
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button {
+  background: transparent;
+  border: 2px solid #000;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  font-size: 1.3rem;
+  color: #fff;
+  width: 100px;
+  height: 50px;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+}
+button:hover {
+  background-color: white;
+  color: #000;
+  opacity: 0.5;
+  cursor: pointer;
+}
+button.hover {
+  background-color: white;
+  color: #000;
+  opacity: 0.5;
+}
+.delete,
+.shift,
+.space {
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.delete {
+  width: 150px;
+}
+.shift {
+  width: 120px;
+}
+.space {
+  width: 450px;
+}
+.textarea {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+textarea {
+  width: 80%;
+  height: 150px;
+  resize: none;
+  padding: 0.5rem;
+  font-size: 2rem;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  background: transparent;
+  cursor: default;
+}
+.upper {
+  text-transform: uppercase;
+}
+@media (max-width: 1320px) {
+  .delete,
+  .shift,
+  .space,
+  .btn {
+    font-size: 0.9rem;
+  }
+  .delete {
+    width: 120px;
+  }
+  .shift {
+    width: 90px;
+  }
+  .space {
+    width: 400px;
+  }
+  button {
+    width: 70px;
+  }
+  textarea {
+    font-size: 1.7rem;
+  }
+  .text-area-wrapper h1 {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 1024px) {
+  .delete,
+  .shift,
+  .space,
+  .btn {
+    font-size: 0.8rem;
+  }
+  .delete {
+    width: 100px;
+  }
+  .shift {
+    width: 70px;
+  }
+  .space {
+    width: 250px;
+  }
+  button {
+    width: 50px;
+  }
+  textarea {
+    font-size: 1.5rem;
+  }
+  .text-area-wrapper h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 750px) {
+  .row {
+    text-align: center;
+  }
+  textarea {
+    font-size: 1.3rem;
+  }
+  .text-area-wrapper h1 {
+    font-size: 1.7rem;
+  }
+}
