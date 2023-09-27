@@ -8,6 +8,7 @@ Welcome to my repository showcasing various challenges completed during my Front
 
 - Each challenge is available on its own branch in this repository.
 - Navigate to the respective branch to explore the code and details of each challenge.
+
 - [Challenge 1: CodingChallenge01](https://github.com/Shkurtevski/CodingChallenges/tree/CodingChallenge01)
 - [Challenge 2: CodingChallenge02](https://github.com/Shkurtevski/CodingChallenges/tree/CodingChallenge02)
 - [Challenge 3: CodingChallenge03](https://github.com/Shkurtevski/CodingChallenges/tree/CodingChallenge03)
