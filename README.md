@@ -25,6 +25,7 @@ Welcome to my repository showcasing various challenges completed during my Front
 - [Challenge 14: CodingChallenge14](https://github.com/Shkurtevski/CodingChallenges/tree/CodingChallenge14)
 - [Challenge 15: CodingChallenge15](https://github.com/Shkurtevski/CodingChallenges/tree/CodingChallenge15)
 - [Challenge 16: CodingChallenge16](https://github.com/Shkurtevski/CodingChallenges/tree/CodingChallenge16)
+- [Challenge 16: CodingChallenge16](https://github.com/Shkurtevski/CodingChallenges/tree/CodingChallenge17)
 
 
 ## Technologies Used
