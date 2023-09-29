@@ -1,0 +1,147 @@
+/* / -----> /IMPORTS/ <----- / */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* / -----> /CSS-RESETS/ <----- / */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+/* / -----> /GLOBAL-STYLES/ <----- / */
+.container {
+  width: 100%;
+}
+
+.content {
+  width: 425px;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: rgb(151, 151, 143);
+}
+
+/* / -----> /NAVBAR/ <----- / */
+nav {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+nav img {
+  filter: brightness(0.6);
+  padding: 0;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.aqua {
+  background-color: aqua;
+  width: 100%;
+  height: 7px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* / -----> /ARTISTS-ITEM/ <----- / */
+.artist-item {
+  padding-bottom: 1rem;
+}
+
+.artist-content {
+  position: relative;
+
+  margin: 0 1rem;
+}
+
+.artist-content h4 {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  background-color: #26a7de;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+/* / -----> /ARTISTS-LIST/ <----- / */
+.artists-list h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* / -----> /ARTIST-PAGE/ <----- / */
+.artist-page {
+padding: 0 1rem 1rem;
+text-align: center;
+}
+
+.artist-page-img {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.image-wrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/* / -----> /ALBUM-PAGE/ <----- / */
+.album-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.album-page img{
+  width: 100px;
+  margin-bottom: 0.5rem;
+}
+
+.album-page p {
+  margin: 0 0 0.5rem;
+}
+
+.album-page p:last-child {
+  margin-bottom: 1rem;
+}
+
+/* / -----> /ERROR-PAGE/ <----- / */
+.error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.error-page h2 {
+  margin-bottom: 1rem;
+}
+
+.error-page p {
+  margin: 0;
+}
